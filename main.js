@@ -14,7 +14,7 @@ hideError();
 
 let hearts = document.getElementsByClassName('like-glyph')
 
-
+function toggleHeart() {
 for (const heart of hearts) {
   heart.addEventListener('click', function(e) {
     mimicServerCall('fakeURL')
@@ -35,6 +35,7 @@ for (const heart of hearts) {
       setTimeout(hideError(), 5000)
     })
   })
+}
 }
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
